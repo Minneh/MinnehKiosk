@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Products" />
         <activity android:name=".Coffee" />
-        <activity android:name=".Airtime"></activity>
+        <activity android:name=".Airtime" />
+        <activity android:name=".Gum"></activity>
     </application>
 
 </manifest>
