@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.minneh.minnehkiosk.Products">
+
+    <!-- Coffee CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_coffee"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/coffeeImageView"
+            android:src="@drawable/coffee_bean_cup"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/coffee_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="3-in-1 White Coffee"
+            android:textAllCaps="true"
+            android:textSize="30sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- Airtime CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_airtime"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#64b528"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/airtimeImageView"
+                android:src="@drawable/safaricom_green"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/airtime_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Safaricom Airtime"
+                android:textAllCaps="true"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- Chewing Gum cardview that contains a textView -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_gum"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#1d407d"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/gumImageView"
+                android:src="@drawable/orbit_flush"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/gum_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Chewing Gum"
+                android:textAllCaps="true"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
