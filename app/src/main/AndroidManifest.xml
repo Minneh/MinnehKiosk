@@ -16,10 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Products" />
-        <activity android:name=".Coffee" />
-        <activity android:name=".Airtime" />
-        <activity android:name=".Gum"></activity>
+        <activity android:name=".ProductsActivity" />
+        <activity android:name=".CoffeeActivity" />
+        <activity android:name=".AirtimeActivity" />
+        <activity android:name=".GumActivity"></activity>
     </application>
 
 </manifest>

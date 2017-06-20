@@ -5,70 +5,74 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.minneh.minnehkiosk.Products">
+    tools:context="com.minneh.minnehkiosk.ProductsActivity">
 
-    <!-- Coffee CardView that contains a TextView -->
+    <!-- CoffeeActivity CardView that contains a TextView -->
     <android.support.v7.widget.CardView
         android:id="@+id/card_coffee"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="180dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
         app:cardCornerRadius="4dp"
         app:cardElevation="@dimen/cardview_compat_inset_shadow">
 
         <RelativeLayout
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/coffeeImageView"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
-                android:id="@+id/coffeeImageView"
-                android:src="@drawable/coffee_bean_cup"
-                android:scaleType="centerCrop"/>
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/coffee_bean_cup" />
 
             <TextView
                 android:id="@+id/coffee_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3-in-1 White Coffee"
-                android:textAllCaps="true"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="#000000"
-                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/coffeeImageView"
+                android:layout_marginTop="16dp"
                 android:layout_toEndOf="@+id/coffeeImageView"
-                android:layout_marginTop="16dp" />
+                android:layout_toRightOf="@+id/coffeeImageView"
+                android:gravity="center_horizontal"
+                android:text="Coffee"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/coffeeButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/coffee_text"
                 android:layout_alignParentBottom="true"
-                android:layout_alignRight="@+id/coffee_text"
-                android:layout_marginBottom="34dp"
-                android:layout_marginEnd="55dp"
-                android:layout_marginRight="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="33dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginRight="43dp"
+                android:background="@drawable/rounded_border_coffee"
                 android:text="Order Coffee"
                 android:textAllCaps="true"
-                android:background="#593C1F"
-                android:textColor="#FFFFFF"/>
+                android:textColor="#FFFFFF" />
 
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
 
-    <!-- Airtime CardView that contains a TextView -->
+    <!-- AirtimeActivity CardView that contains a TextView -->
     <android.support.v7.widget.CardView
         android:id="@+id/card_airtime"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="180dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="15dp"
         app:cardBackgroundColor="#64b528"
         app:cardCornerRadius="4dp"
         app:cardElevation="@dimen/cardview_compat_inset_shadow">
@@ -104,24 +108,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="40dp"
-                android:background="#FFFFFF"
+                android:background="@drawable/rounded_border_airtime"
                 android:text="Request for Airtime"
                 android:textColor="#64b528"
                 android:textAllCaps="true"
                 android:layout_alignParentBottom="true"
-                android:layout_toRightOf="@+id/airtimeImageView"
-                android:layout_toEndOf="@+id/airtimeImageView"
-                android:layout_marginLeft="34dp"
-                android:layout_marginStart="34dp" />
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="17dp"
+                android:layout_marginEnd="17dp" />
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
 
-    <!-- Chewing Gum cardview that contains a textView -->
+    <!-- Chewing GumActivity cardview that contains a textView -->
     <android.support.v7.widget.CardView
         android:id="@+id/card_gum"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="180dp"
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         app:cardBackgroundColor="#1d407d"
@@ -146,7 +150,7 @@
                 android:textAllCaps="true"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:gravity="center_horizontal"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/gumImageView"
@@ -157,16 +161,16 @@
                 android:id="@+id/gumButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginBottom="42dp"
-                android:layout_marginEnd="61dp"
-                android:layout_marginRight="61dp"
+                android:layout_marginBottom="39dp"
+                android:layout_marginEnd="51dp"
+                android:layout_marginRight="51dp"
                 android:text="Order Gum"
                 android:textColor="#1d407d"
                 android:textAllCaps="true"
-                android:background="#FFFFFF"/>
+                android:background="@drawable/rounded_border_gum"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>

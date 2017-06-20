@@ -3,11 +3,11 @@ package com.minneh.minnehkiosk;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Gum extends AppCompatActivity {
+public class AirtimeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gum);
+        setContentView(R.layout.activity_airtime);
     }
 }

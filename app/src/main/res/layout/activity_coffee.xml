@@ -1,9 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.minneh.minnehkiosk.Coffee">
+    android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/lovecoffee"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.minneh.minnehkiosk.CoffeeActivity">
+        <!-- White CoffeeActivity CardView that contains a TextView, ImageView and a button-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_white_coffee"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="@dimen/cardview_compat_inset_shadow"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/whiteCoffeeImageView"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/coffee_bean_cup" />
+
+                <TextView
+                    android:id="@+id/white_coffee_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_toEndOf="@+id/whiteCoffeeImageView"
+                    android:layout_toRightOf="@+id/whiteCoffeeImageView"
+                    android:gravity="center_horizontal"
+                    android:text="White Coffee"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/whiteCoffeeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/rounded_border_coffee"
+                    android:text="Order Coffee"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/white_coffee_text"
+                    android:layout_alignStart="@+id/white_coffee_text" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- CoffeeActivity CardView that contains a TextView -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_black_coffee"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="@dimen/cardview_compat_inset_shadow"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/blackCoffeeImageView"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/coffee_bean_cup" />
+
+                <TextView
+                    android:id="@+id/black_coffee_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:gravity="center_horizontal"
+                    android:text="Black Coffee"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/blackCoffeeButton"
+                    android:layout_alignStart="@+id/blackCoffeeButton" />
+
+                <Button
+                    android:id="@+id/blackCoffeeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_border_coffee"
+                    android:text="Order Coffee"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@+id/black_coffee_text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="32dp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
