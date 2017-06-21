@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.minneh.minnehkiosk.GumActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/gumImageView"
+        android:layout_width="402dp"
+        android:layout_height="248dp"
+        app:srcCompat="@drawable/orbit_four"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <TextView
+        android:id="@+id/quantityTextView"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:text="Please Enter Quantity:"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="357dp"
+        android:layout_above="@+id/gumButton"
+        android:layout_toLeftOf="@+id/editText5"
+        android:layout_toStartOf="@+id/editText5"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="148dp"
+        android:layout_height="34dp"
+        android:text="Unit Price: KES 10"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="286dp"
+        android:layout_below="@+id/gumImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="120dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="333dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/priceTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp" />
+
+    <Button
+        android:id="@+id/gumButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@drawable/rounded_border_gum"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="447dp"
+        android:layout_marginBottom="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
