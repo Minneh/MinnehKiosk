@@ -39,7 +39,7 @@
                     android:layout_width="160dp"
                     android:layout_height="160dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/coffee_bean_cup" />
+                    android:src="@drawable/flat_white_coffee" />
 
                 <TextView
                     android:id="@+id/white_coffee_text"
@@ -93,16 +93,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/blackCoffeeImageView"
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/coffee_bean_cup" />
-
                 <TextView
                     android:id="@+id/black_coffee_text"
                     android:layout_width="wrap_content"
@@ -132,6 +122,17 @@
                     android:layout_marginLeft="33dp"
                     android:layout_marginStart="33dp"
                     android:layout_marginTop="32dp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/black_coffee"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/black_coffee_text"
+                    android:layout_alignParentBottom="true" />
 
             </RelativeLayout>
 
