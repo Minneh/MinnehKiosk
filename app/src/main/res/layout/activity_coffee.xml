@@ -16,15 +16,20 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.minneh.minnehkiosk.CoffeeActivity">
+        tools:context="com.minneh.minnehkiosk.CoffeeActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
         <!-- White CoffeeActivity CardView that contains a TextView, ImageView and a button-->
         <android.support.v7.widget.CardView
             android:id="@+id/card_white_coffee"
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="200dp"
             android:layout_gravity="center"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="40dp"
             android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             app:cardCornerRadius="4dp"
             app:cardElevation="@dimen/cardview_compat_inset_shadow"
             tools:layout_editor_absoluteX="8dp"
@@ -38,38 +43,53 @@
                     android:id="@+id/whiteCoffeeImageView"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
                     android:scaleType="centerCrop"
                     android:src="@drawable/flat_white_coffee" />
-
-                <TextView
-                    android:id="@+id/white_coffee_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginLeft="28dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginTop="21dp"
-                    android:layout_toEndOf="@+id/whiteCoffeeImageView"
-                    android:layout_toRightOf="@+id/whiteCoffeeImageView"
-                    android:gravity="center_horizontal"
-                    android:text="White Coffee"
-                    android:textAllCaps="true"
-                    android:textColor="#000000"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/whiteCoffeeButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="32dp"
                     android:background="@drawable/rounded_border_coffee"
+                    android:gravity="center_horizontal"
                     android:text="Add to Cart"
                     android:textAllCaps="true"
                     android:textColor="#FFFFFF"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignLeft="@+id/white_coffee_text"
-                    android:layout_alignStart="@+id/white_coffee_text" />
+                    android:layout_alignBottom="@+id/whiteCoffeeImageView"
+                    android:layout_alignRight="@+id/white_coffee_text"
+                    android:layout_alignEnd="@+id/white_coffee_text" />
+
+                <NumberPicker
+                    android:id="@+id/whiteNumberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/whiteCoffeeButton"
+                    android:layout_alignLeft="@+id/whiteCoffeeImageView"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignRight="@+id/whiteCoffeeButton"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp" />
+
+                <TextView
+                    android:id="@+id/white_coffee_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="White Coffee"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_alignTop="@+id/whiteCoffeeImageView"
+                    android:layout_toRightOf="@+id/whiteCoffeeImageView"
+                    android:layout_toEndOf="@+id/whiteCoffeeImageView"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp" />
 
             </RelativeLayout>
 
@@ -80,10 +100,12 @@
         <android.support.v7.widget.CardView
             android:id="@+id/card_black_coffee"
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="200dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             app:cardCornerRadius="4dp"
             app:cardElevation="@dimen/cardview_compat_inset_shadow"
             tools:layout_editor_absoluteX="8dp"
@@ -93,46 +115,56 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/blackCoffeeButton"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/black_coffee_text"
+                    app:srcCompat="@drawable/black_coffee"
+                    android:layout_toRightOf="@+id/black_coffee_text" />
+
+                <Button
+                    android:id="@+id/blackCoffeeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                    android:background="@drawable/rounded_border_coffee"
+                    android:text="Add to Cart"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF" />
+
+                <NumberPicker
+                    android:id="@+id/blackNumberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/black_coffee_text"
+                    android:layout_alignStart="@+id/black_coffee_text"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp" />
+
                 <TextView
                     android:id="@+id/black_coffee_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/blackCoffeeButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/blackCoffeeButton"
                     android:layout_marginTop="23dp"
                     android:gravity="center_horizontal"
                     android:text="Black Coffee"
                     android:textAllCaps="true"
                     android:textColor="#000000"
                     android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignLeft="@+id/blackCoffeeButton"
-                    android:layout_alignStart="@+id/blackCoffeeButton" />
-
-                <Button
-                    android:id="@+id/blackCoffeeButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_border_coffee"
-                    android:text="Add to Cart"
-                    android:textAllCaps="true"
-                    android:textColor="#FFFFFF"
-                    android:layout_below="@+id/black_coffee_text"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginLeft="33dp"
-                    android:layout_marginStart="33dp"
-                    android:layout_marginTop="32dp" />
-
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/black_coffee"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_toEndOf="@+id/black_coffee_text"
-                    android:layout_alignParentBottom="true" />
+                    android:textStyle="bold" />
 
             </RelativeLayout>
 
