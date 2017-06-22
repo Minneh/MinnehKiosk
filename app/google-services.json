@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "80716417872",
+    "firebase_url": "https://minnehkiosk.firebaseio.com",
+    "project_id": "minnehkiosk",
+    "storage_bucket": "minnehkiosk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80716417872:android:ab3ed54cf3773c57",
+        "android_client_info": {
+          "package_name": "com.minneh.minnehkiosk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80716417872-6h5p1tm41kstnlfpltn0ql14gdrcb8l5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.minneh.minnehkiosk",
+            "certificate_hash": "2c95815069b4d06781e6b2423d6b399aaac469cd"
+          }
+        },
+        {
+          "client_id": "80716417872-f6pml2f20bqidhnpg7if6r7fm04qsmo8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnCRG-pmwlGZC5B1A6wpcNA3m0BQjklUY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80716417872-f6pml2f20bqidhnpg7if6r7fm04qsmo8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

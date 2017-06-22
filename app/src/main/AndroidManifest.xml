@@ -19,7 +19,8 @@
         <activity android:name=".ProductsActivity" />
         <activity android:name=".CoffeeActivity" />
         <activity android:name=".AirtimeActivity" />
-        <activity android:name=".GumActivity"></activity>
+        <activity android:name=".GumActivity" />
+        <activity android:name=".CreateAccountActivity"></activity>
     </application>
 
 </manifest>
