@@ -73,7 +73,7 @@
         android:layout_height="170dp"
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
-        app:cardBackgroundColor="#64b528"
+        app:cardBackgroundColor="#FFFFFF"
         app:cardCornerRadius="4dp"
         app:cardElevation="@dimen/cardview_compat_inset_shadow">
 
@@ -85,17 +85,20 @@
                 android:id="@+id/airtimeImageView"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/safaricom_green" />
+                android:scaleType="fitCenter"
+                android:src="@drawable/safaricom_tiny"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/airtimeButton"
+                android:layout_toEndOf="@+id/airtimeButton" />
 
             <TextView
                 android:id="@+id/airtime_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="16dp"
-                android:layout_toEndOf="@+id/airtimeImageView"
-                android:layout_toRightOf="@+id/airtimeImageView"
+                android:layout_alignEnd="@+id/airtimeButton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/airtimeButton"
                 android:gravity="center_horizontal"
                 android:text="Safaricom Airtime"
                 android:textAllCaps="true"
@@ -107,16 +110,14 @@
                 android:id="@+id/airtimeButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="36dp"
                 android:background="@drawable/rounded_border_airtime"
                 android:text="Request for Airtime"
-                android:textColor="#64b528"
                 android:textAllCaps="true"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="17dp"
-                android:layout_marginEnd="17dp" />
+                android:textColor="#FFFFFF" />
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
@@ -128,7 +129,7 @@
         android:layout_height="170dp"
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
-        app:cardBackgroundColor="#1d407d"
+        app:cardBackgroundColor="#FFFFFF"
         app:cardCornerRadius="4dp"
         app:cardElevation="@dimen/cardview_compat_inset_shadow">
 
@@ -139,7 +140,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:id="@+id/gumImageView"
-                android:src="@drawable/orbit_flush"
+                android:src="@drawable/trident_group"
                 android:scaleType="centerCrop"/>
 
             <TextView
@@ -150,7 +151,7 @@
                 android:textAllCaps="true"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:textColor="#FFFFFF"
+                android:textColor="#000000"
                 android:gravity="center_horizontal"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/gumImageView"
@@ -165,7 +166,7 @@
                 android:layout_marginEnd="51dp"
                 android:layout_marginRight="51dp"
                 android:text="Order Gum"
-                android:textColor="#1d407d"
+                android:textColor="#FFFFFF"
                 android:textAllCaps="true"
                 android:background="@drawable/rounded_border_gum"
                 android:layout_alignParentBottom="true"

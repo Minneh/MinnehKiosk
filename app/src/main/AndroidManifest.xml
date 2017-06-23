@@ -20,9 +20,21 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
         </activity>
-        <activity android:name=".CoffeeActivity" />
-        <activity android:name=".AirtimeActivity" />
-        <activity android:name=".GumActivity" />
+        <activity android:name=".CoffeeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductsActivity" />
+        </activity>
+        <activity android:name=".AirtimeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductsActivity" />
+        </activity>
+        <activity android:name=".GumActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductsActivity" />
+        </activity>
         <activity android:name=".CreateAccountActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>

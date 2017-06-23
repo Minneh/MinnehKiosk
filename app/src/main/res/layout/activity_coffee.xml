@@ -5,13 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/imageView"
-        android:src="@drawable/lovecoffee"
-        android:scaleType="centerCrop"/>
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -55,25 +48,12 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_border_coffee"
                     android:gravity="center_horizontal"
-                    android:text="Add to Cart"
+                    android:text="Make Order"
                     android:textAllCaps="true"
                     android:textColor="#FFFFFF"
                     android:layout_alignBottom="@+id/whiteCoffeeImageView"
                     android:layout_alignRight="@+id/white_coffee_text"
                     android:layout_alignEnd="@+id/white_coffee_text" />
-
-                <NumberPicker
-                    android:id="@+id/whiteNumberPicker"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignEnd="@+id/whiteCoffeeButton"
-                    android:layout_alignLeft="@+id/whiteCoffeeImageView"
-                    android:layout_alignParentLeft="false"
-                    android:layout_alignParentRight="false"
-                    android:layout_alignParentStart="false"
-                    android:layout_alignRight="@+id/whiteCoffeeButton"
-                    android:layout_marginEnd="25dp"
-                    android:layout_marginRight="25dp" />
 
                 <TextView
                     android:id="@+id/white_coffee_text"
@@ -90,6 +70,17 @@
                     android:layout_toEndOf="@+id/whiteCoffeeImageView"
                     android:layout_marginLeft="29dp"
                     android:layout_marginStart="29dp" />
+
+                <EditText
+                    android:id="@+id/white_coffee_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/white_coffee_text"
+                    android:layout_marginTop="18dp"
+                    android:layout_toEndOf="@+id/whiteCoffeeImageView"
+                    android:layout_toRightOf="@+id/whiteCoffeeImageView"
+                    android:ems="10"
+                    android:inputType="number" />
 
             </RelativeLayout>
 
@@ -138,18 +129,9 @@
                     android:layout_marginLeft="23dp"
                     android:layout_marginStart="23dp"
                     android:background="@drawable/rounded_border_coffee"
-                    android:text="Add to Cart"
+                    android:text="Make Order"
                     android:textAllCaps="true"
                     android:textColor="#FFFFFF" />
-
-                <NumberPicker
-                    android:id="@+id/blackNumberPicker"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/black_coffee_text"
-                    android:layout_alignStart="@+id/black_coffee_text"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginStart="32dp" />
 
                 <TextView
                     android:id="@+id/black_coffee_text"
@@ -165,6 +147,16 @@
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/black_coffee_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:layout_toLeftOf="@+id/imageView4"
+                    android:layout_toStartOf="@+id/imageView4" />
 
             </RelativeLayout>
 

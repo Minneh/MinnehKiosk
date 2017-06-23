@@ -52,7 +52,7 @@
             android:text="Log in"
             android:background="@color/colorAccent"
             android:layout_marginTop="15dp"
-            android:textColor="@android:color/black" />
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -71,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:textColor="@color/colorPrimaryLight"
+        android:textColor="#FFFFFF"
         android:textSize="30dp"
         android:textStyle="bold"
         android:layout_above="@+id/linearLayout"

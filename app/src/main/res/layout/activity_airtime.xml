@@ -7,19 +7,47 @@
     tools:context="com.minneh.minnehkiosk.AirtimeActivity">
 
     <TextView
-        android:id="@+id/airtimeTextView"
+        android:id="@+id/phoneTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please Enter Amount:"
+        android:text="Phone Number:"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="325dp"
-        android:layout_marginBottom="49dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignRight="@+id/airtimeTextView"
+        android:layout_alignEnd="@+id/airtimeTextView" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="309dp"
+        android:layout_alignBaseline="@+id/phoneTextView"
+        android:layout_alignBottom="@+id/phoneTextView"
+        android:layout_toRightOf="@+id/airtimeTextView"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/airtimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount:"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="325dp"
+        android:layout_marginBottom="42dp"
         android:layout_above="@+id/airtimeButton"
-        android:layout_alignRight="@+id/airtimeButton"
-        android:layout_alignEnd="@+id/airtimeButton"
-        android:layout_marginRight="27dp"
-        android:layout_marginEnd="27dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp" />
 
     <EditText
         android:id="@+id/airtimeEditText"
@@ -31,13 +59,17 @@
         tools:layout_editor_absoluteY="309dp"
         android:layout_alignBaseline="@+id/airtimeTextView"
         android:layout_alignBottom="@+id/airtimeTextView"
-        android:layout_toRightOf="@+id/airtimeButton" />
+        android:layout_toRightOf="@+id/airtimeTextView"
+        android:layout_toEndOf="@+id/airtimeTextView"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
 
     <Button
         android:id="@+id/airtimeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add to Cart"
+        android:text="Place Order"
+        android:textColor="#FFFFFF"
         android:background="@drawable/rounded_border_airtime"
         tools:layout_editor_absoluteX="128dp"
         tools:layout_editor_absoluteY="402dp"
@@ -49,11 +81,10 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/safcom_airtime"
-        android:layout_above="@+id/airtimeEditText"
+        app:srcCompat="@drawable/safaricom_smaller"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="39dp" />
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
